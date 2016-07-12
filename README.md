@@ -25,6 +25,11 @@ Id,City,Country
 7,Amsterdam,Netherlands
 8,Paris,France
 ```
+Calling Templator with
+```powershell
+.\Templator.ps1 -CsvFile data.csv -TemplateFile template.txt
+```
+Gives following result file:
 `Result file`:
 ```sql
 INSERT INTO [dbo].[Table] ([Id], [City], [Country]) VALUES (1, Stockholm, Sweden)
