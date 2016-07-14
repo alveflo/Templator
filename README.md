@@ -1,8 +1,14 @@
 # Templator
 Textgenerator from csv-files using template strings
+## Install
+```powershell
+$ git clone https://github.com/alveflo/Templator.git
+$ New-Alias -Name Templator -Value <path>\templator.ps1
+```
+
 ## Usage
 ```powershell
-$ .\Templator.ps1 -CsvFile <file> (-Template <str> | -TemplateFile <file>)
+$ Templator -CsvFile <file> (-Template <str> | -TemplateFile <file>)
 ```
 ### Example
 The following example generates SQL `INSERT` statements.
